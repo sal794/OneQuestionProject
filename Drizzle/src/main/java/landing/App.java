@@ -10,6 +10,10 @@ public class App {
 
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
+        
+        DatabaseTest test = new DatabaseTest();
+        test.dbtest("Tigers", "Because of their teeth");
+        
     }
 
 }

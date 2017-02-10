@@ -1,18 +1,23 @@
 package landing;
 
-import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Answers")
-public class Answer implements Serializable{
-
-	private static final long serialVersionUID = 1L;
+@Table(name="answer")
+public class Answer{
 	
-	@Column(name="answer")
+	@Id 
+	//@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id")
+	int id;
+
+	@Column(name="answer", unique = false)
 	String answer;
 	
 	@Column(name="explination")
@@ -20,6 +25,14 @@ public class Answer implements Serializable{
 	
 	@Column(name="count")
 	int count;
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getAnswer() {
 		return answer;
