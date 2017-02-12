@@ -3,11 +3,10 @@ package landing;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import landing.HibernateUtil;
+public class AnswerManager {
 
-public class DatabaseTest {
-	
-	public void dbtest(String answer, String explination){
+	public void addAnswer(String answer, String explination){
+		
 		Session session = HibernateUtil.buildSessionFactory().openSession();
 		Transaction tx = null;
 		tx = session.beginTransaction();
@@ -18,6 +17,7 @@ public class DatabaseTest {
 		session.save(a);
 		tx.commit();
 		session.close();
+		
 	}
-
+	
 }
