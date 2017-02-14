@@ -9,11 +9,10 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="answer")
+@Table(name="ANSWER")
 public class Answer{
 	
 	@Id 
-	//@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
 	int id;
 

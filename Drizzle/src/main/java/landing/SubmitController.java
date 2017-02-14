@@ -10,6 +10,12 @@ public class SubmitController {
 
 	@RequestMapping("/success")
     public String greeting(Model model, @RequestParam("answer") String answer, @RequestParam("explination") String explination){
+		
+		AnswerManager ansMan = new AnswerManager();
+		boolean exists = ansMan.checkAnswer(answer);
+		if (!exists){
+			ansMan.addAnswer(answer, explination);
+		}		
 		model.addAttribute("answer", answer);
 		model.addAttribute("explination", explination);
         return "success";
