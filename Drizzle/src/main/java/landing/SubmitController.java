@@ -12,7 +12,7 @@ public class SubmitController {
     public String greeting(Model model, @RequestParam("answer") String answer, @RequestParam("explination") String explination){
 		
 		AnswerManager ansMan = new AnswerManager();
-		boolean exists = ansMan.checkAnswer(answer);
+		boolean exists = ansMan.checkAnswer(answer, explination);
 		if (!exists){
 			ansMan.addAnswer(answer, explination);
 		}		
