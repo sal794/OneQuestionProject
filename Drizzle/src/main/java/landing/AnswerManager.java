@@ -7,6 +7,19 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 public class AnswerManager {
+	
+	public boolean shortAnswer(String answer){
+		if(answer.length()>25){
+			return false;
+		}
+		return true;
+	}
+	public boolean shortExplination(String explination){
+		if(explination.length()>144){
+			return false;
+		}
+		return true;
+	}
 
 	public void addAnswer(String answer, String explination){
 		

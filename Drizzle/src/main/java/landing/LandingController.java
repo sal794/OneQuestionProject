@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class LandingController {
 
-    @RequestMapping("/landing")
+    @RequestMapping(value={"/landing", "/"})
     public String greeting(){
         return "landing";
     }

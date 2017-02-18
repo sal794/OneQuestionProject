@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>You Finally Made It</title>
+<link
+	href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.7/css/bootstrap.min.css"
+	th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"
+	rel="stylesheet" media="screen" />
+
+<link href="/css/main.css" rel="stylesheet" />
 </head>
 <body>
-<h1>In one word, what is your greatest fear.</h1>
-<form method="post" action="/success">
-  <p>Answer:</p>
-  <br />
-  <input type="text" name="answer" />
-  <br />
-  <h2>Give further reasoning if you'd like.</h2>
-  <br/>
-  <p>Reasoning:</p>
-  <br />
-  <input type="text" name="explination" />
-  <br /><br />
-  <input type="submit" value="Submit" />
-</form>
 
+	<div class="jumbotron">
+		<h1>In one word, what is your greatest fear.</h1>
+
+		<form method="post" action="/success">
+			<p th:text="${shortAnswer}"></p>
+			<p>Answer:</p>
+			<br /> <input type="text" name="answer" required="required" /> <br />
+			<h2>Give further reasoning if you'd like.</h2>
+			<br />
+			<p th:text="${shortExplination}"></p>
+			<p>Reasoning:</p>
+			<br /> <input type="text" name="explination" maxlength="140" value="" placeholder="Care to elaborate?" class="explination"/>
+			<br />
+			<br /> <input type="submit" class="btn btn-success" value="Submit" />
+		</form>
+		
+		
+		<script
+			src="http://cdn.jsdelivr.net/webjars/jquery/3.1.1/jquery.min.js"
+			th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+		<script src="/js/main.js"></script>
+	</div>
 </body>
 </html>
