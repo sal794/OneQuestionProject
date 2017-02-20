@@ -3,15 +3,13 @@ package landing;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="ANSWER")
 public class Answer{
-	
+
 	@Id 
 	@Column(name="id")
 	int id;
@@ -19,117 +17,117 @@ public class Answer{
 	@Column(name="answer", unique = false)
 	String answer;
 	
-	@Column(name="explination1")
-	String explination1;
+	@Column(name="explanation1")
+	String explanation1;
 	
-	@Column(name="explination2")
-	String explination2;
+	@Column(name="explanation2")
+	String explanation2;
 	
-	@Column(name="explination3")
-	String explination3;
+	@Column(name="explanation3")
+	String explanation3;
 	
-	@Column(name="explination4")
-	String explination4;
+	@Column(name="explanation4")
+	String explanation4;
 	
-	@Column(name="explination5")
-	String explination5;
+	@Column(name="explanation5")
+	String explanation5;
 	
-	@Column(name="explination6")
-	String explination6;
+	@Column(name="explanation6")
+	String explanation6;
 	
-	@Column(name="explination7")
-	String explination7;
+	@Column(name="explanation7")
+	String explanation7;
 	
-	@Column(name="explination8")
-	String explination8;
+	@Column(name="explanation8")
+	String explanation8;
 	
-	@Column(name="explination9")
-	String explination9;
+	@Column(name="explanation9")
+	String explanation9;
 	
-	@Column(name="explination10")
-	String explination10;
+	@Column(name="explanation10")
+	String explanation10;
 	
 	@Column(name="count")
 	int count;
 	
-	public String getExplination1() {
-		return explination1;
+	public String getExplanation1() {
+		return explanation1;
 	}
 
-	public void setExplination1(String explination1) {
-		this.explination1 = explination1;
+	public void setExplanation1(String explanation1) {
+		this.explanation1 = explanation1;
 	}
 
-	public String getExplination2() {
-		return explination2;
+	public String getExplanation2() {
+		return explanation2;
 	}
 
-	public void setExplination2(String explination2) {
-		this.explination2 = explination2;
+	public void setExplanation2(String explanation2) {
+		this.explanation2 = explanation2;
 	}
 
-	public String getExplination3() {
-		return explination3;
+	public String getExplanation3() {
+		return explanation3;
 	}
 
-	public void setExplination3(String explination3) {
-		this.explination3 = explination3;
+	public void setExplanation3(String explanation3) {
+		this.explanation3 = explanation3;
 	}
 
-	public String getExplination4() {
-		return explination4;
+	public String getExplanation4() {
+		return explanation4;
 	}
 
-	public void setExplination4(String explination4) {
-		this.explination4 = explination4;
+	public void setExplanation4(String explanation4) {
+		this.explanation4 = explanation4;
 	}
 
-	public String getExplination5() {
-		return explination5;
+	public String getExplanation5() {
+		return explanation5;
 	}
 
-	public void setExplination5(String explination5) {
-		this.explination5 = explination5;
+	public void setExplanation5(String explanation5) {
+		this.explanation5 = explanation5;
 	}
 
-	public String getExplination6() {
-		return explination6;
+	public String getExplanation6() {
+		return explanation6;
 	}
 
-	public void setExplination6(String explination6) {
-		this.explination6 = explination6;
+	public void setExplanation6(String explanation6) {
+		this.explanation6 = explanation6;
 	}
 
-	public String getExplination7() {
-		return explination7;
+	public String getExplanation7() {
+		return explanation7;
 	}
 
-	public void setExplination7(String explination7) {
-		this.explination7 = explination7;
+	public void setExplanation7(String explanation7) {
+		this.explanation7 = explanation7;
 	}
 
-	public String getExplination8() {
-		return explination8;
+	public String getExplanation8() {
+		return explanation8;
 	}
 
-	public void setExplination8(String explination8) {
-		this.explination8 = explination8;
+	public void setExplanation8(String explanation8) {
+		this.explanation8 = explanation8;
 	}
 
-	public String getExplination9() {
-		return explination9;
+	public String getExplanation9() {
+		return explanation9;
 	}
 
-	public void setExplination9(String explination9) {
-		this.explination9 = explination9;
+	public void setExplanation9(String explanation9) {
+		this.explanation9 = explanation9;
 	}
 
-	public String getExplination10() {
-		return explination10;
+	public String getExplanation10() {
+		return explanation10;
 	}
 
-	public void setExplination10(String explination10) {
-		this.explination10 = explination10;
+	public void setExplanation10(String explanation10) {
+		this.explanation10 = explanation10;
 	}
 
 

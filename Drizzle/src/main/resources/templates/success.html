@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Submitted</title>
 </head>
 <body>
-<p>Successfully Submitted.</p>
-<p>Answer was: <td th:text="${answer}"></td></p>
-<p>Explanation was: <td th:text="${explination}"></td></p>
-<p></p>
+	<p>Successfully Submitted.</p>
+
+	<table>
+		<thead class="table table-striped">
+			<tr>
+				<th>Explanation 1</th>
+				<th>Explanation 2</th>
+				<th>Explanation 3</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="ans : @{explanation}">
+				<td th:text="${ans.explanation1}">Cats</td>
+				<td th:text="${ans.explanation2}">Teeth</td>
+			</tr>
+		</tbody>
+	</table>
+	<p>
+		Answer was:
+		<td th:text="${answer}"></td>
+	</p>
+	<p>Explanation was:</p>
+	<p></p>
 </body>
 </html>
